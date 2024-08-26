@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+}
+nav{
+    display: flex;
+    background-color: rgb(65, 35, 35);
+    padding: 20px;
+    position: sticky;
+    top:0;
+}
+nav .menu_list{
+    width: 70%;
+    text-align: center;
+}
+nav .menu_list a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 20px;
+    padding: 5px;
+}
+nav .menu_list a:hover{
+    border-bottom: 2px solid white;
+}
+nav .side_menu{
+    display: flex;
+    width: 30%;
+    justify-content: right;
+    align-items: center;
+}
+nav .side_menu .search{
+    background-color: white;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+nav .search input{
+    border: none;
+    outline: none;
+    width: 200px;
+    color: burlywood;
+}
+nav .side_menu button{
+    background-color: burlywood;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+nav label{
+    color: white;
+    cursor: pointer;
+}
+nav #toggle_button, nav label{
+    display: none;
+}
+/* home section */
+#home{
+    height: 100vh;
+    background-image:url(img/aaa.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0px 40px;
+}
+#home h1{
+    font-size: 150px;
+    letter-spacing: 1px;
+
+}
+#home h3{
+    font-size:70px;
+}
+#home p{
+    font-size: 20px;
+    margin: 20px 0px;
+}
+#home button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: burlywood;
+    color: white;
+    font-size: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:900px)  {
+nav label{
+        display: block;
+    }
+    nav .menu_list a {
+        display: none;
+    }
+    nav .menu_list{
+        text-align: start;
+    }
+    nav #toggle_button:checked ~ a{
+        display: block;
+        margin: 10px;
+        width: 20%;
+    
+    }
+    nav .side_menu{
+        align-items: start;
+
+    }
+    
+}
+@media (max-width:700px) {
+    #home {
+        text-align: center;
+    }
+    #home h1{
+        font-size: 80px;
+    }
+    #home h3{
+        font-size: 40px;
+    }
+    #home p{
+        font-size: 18px;
+
+    }
+    #home button {
+        font-size: 20px;
+    }
+    
+}
